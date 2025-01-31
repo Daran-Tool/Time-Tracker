@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Time Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Timer Section -->
+        <div class="timer-box">
+            <div id="time-display">00:00:00</div>
+            <div class="buttons">
+                <button id="start-stop" class="btn start">Start</button>
+                <button id="reset" class="btn reset">Reset</button>
+            </div>
+        </div>
+
+        <!-- Task Input -->
+        <div class="input-box">
+            <input type="text" id="task-name" placeholder="Enter task name">
+            <select id="project">
+                <option value="General">General</option>
+            </select>
+            <button id="add-project" class="btn project-btn">+ Project</button>
+        </div>
+
+        <!-- Entries List -->
+        <div class="entries-box">
+            <h3>Today's Entries</h3>
+            <ul id="entries-list"></ul>
+        </div>
+
+        <!-- Report Section -->
+        <div class="report-box">
+            <h3>Summary</h3>
+            <p>Total Today: <span id="total-time">00:00:00</span></p>
+            <button id="export-csv" class="btn export">Export CSV</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
